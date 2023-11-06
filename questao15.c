@@ -12,21 +12,21 @@ int opcao;
 float valor, convercao;
 
  do {
-        printf("1 - QuilÙmetros para Milhas\n");
+        printf("1 - Quil√¥metros para Milhas\n");
         printf("2 - Celsius para Fahrenheit\n");
-        printf("0 - Sair do programa\n");
-        printf("Escolha a opÁ„o desejada: ");
+        printf("0 - Sair\n");
+        printf("Escolha a op√ß√£o desejada: ");
         scanf("%d", &opcao);
 
 
         switch (opcao) {
             case 1:
-                printf("Digite os quilÙmetros: ");
+                printf("Digite os quil√¥metros: ");
                 scanf("%f", &valor);
                 
                 convercao = valor * 0.621371;
                 
-                printf("%.2f quilÙmetros s„o %.2f milhas.\n", valor, convercao);
+                printf("%.2f quil√¥metros s√£o %.2f milhas.\n", valor, convercao);
                 break;
             case 2:
                 printf("Digite os graus Celsius: ");
@@ -34,10 +34,10 @@ float valor, convercao;
                 
                 convercao = (valor * 9/5) + 32;
                 
-                printf("%.2f graus Celsius s„o %.2f graus Fahrenheit.\n", valor, convercao);
+                printf("%.2f graus Celsius s√£o %.2f graus Fahrenheit.\n", valor, convercao);
                 break;
             default:
-                printf("OpÁ„o inv·lida\n Tente novamente...\n");
+                printf("Op√ß√£o inv√°lida\n Tente novamente...\n");
                 sleep(3);
                 break;
         } 
